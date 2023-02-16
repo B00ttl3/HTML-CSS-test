@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather:wght@700&family=Pacifico&display=swap');
+
+:root {
+    --main-bg-color: #10e798;
+    ;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+    background: var(--main-bg-color);
+    font-family: 'Merriweather', serif;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 87px;
+    padding: 0 4px;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: rgba(9, 9, 9, 0.951);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgba(252, 252, 252, 0.951);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 480px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0 5px 0 45px;
+    padding: 0 15px;
+}
+
+.search button {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.search button:hover {
+    font-weight: 900;
+    color: black;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+.slider {
+    width: 40vw;
+    margin: 12px auto;
+}
+
+.card {
+    max-width: 91vw;
+    margin: auto;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Pacifico', cursive;
+}
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 25px;
+}
+
+.container .card-item:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: coral;
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: rgb(241, 244, 247);
+    font-family: 'Merriweather', serif;
+}
